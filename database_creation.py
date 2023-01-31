@@ -29,3 +29,5 @@ res = cur.fetchall()
 print(res)
 
 ###################closing and cleaning the databse##############
+cur.close()
+database.close()
