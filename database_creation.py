@@ -19,3 +19,13 @@ cur.execute(table)
 table_data = ''' INSERT INTO notes(s_no,name,batch,description)
 VALUES(?,?,?,?)'''
 cur.execute(table_data,(s_no,name,batch,des))
+database.commit()
+
+############ fetching the database values and displaying ############
+
+
+cur.execute("SELECT * from notes;")
+res = cur.fetchall()
+print(res)
+
+###################closing and cleaning the databse##############
