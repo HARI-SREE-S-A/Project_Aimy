@@ -13,3 +13,9 @@ des = input("description")
 
 table = ''' CREATE TABLE IF NOT EXISTS notes(s_no INTEGER PRIMARY KEY,name TEXT,batch TEXT,description TEXT);'''
 cur.execute(table)
+
+######## Inserting values into database ##########
+
+table_data = ''' INSERT INTO notes(s_no,name,batch,description)
+VALUES(?,?,?,?)'''
+cur.execute(table_data,(s_no,name,batch,des))
