@@ -1,6 +1,5 @@
 import sqlite3
 
-
 database = sqlite3.connect("database.db")
 cur = databse.cursor()
 ###### variable declaring and assignment ###########
