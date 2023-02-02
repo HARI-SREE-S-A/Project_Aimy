@@ -11,7 +11,7 @@ def dat_up():
     cur.execute(table_data,(idn,name,des))
     database.commit()
     cur.execute("SELECT * from notes;")
-    res = cur.fetchall()
+    res = cur.fetchall()# printing database in console if required
     print(res)
     return database
     
